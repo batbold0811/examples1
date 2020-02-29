@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Html quiz with react</title>
+
+  <link href="libs/css/bootstrap4.0.css" rel="stylesheet">
+  <link href="libs/css/jquery-ui.min.css" rel="stylesheet">
+  <script src="libs/js/jquery-3.4.1.min.js"></script>
+  <script src="libs/js/bootstrap4.0.js"></script>
+  <script src="libs/js/jquery-ui.min.js"></script>
+  <link rel="stylesheet" href="libs/css/main.css">
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Easy.pack.mn</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="custom.html">Custom quiz</a>
+          </li>
+        </ul>
+        <form class="form-inline mt-2 mt-md-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container" style="margin-top: 65px;">
+
+    <div class="row">
+      <div class="col-8">
+        <h3>Тестүүд</h3>
+        <hr>
+        <div class="row">
+            <div class="col">
+              <input type="text" id="fin_ratio" class="form-control" placeholder="Төрлөөр хайх" required />
+            </div>
+            <div class="col">
+              <input type="number" id="item_code" class="form-control" placeholder="Асуултын тоо" min="1" max="10" required />
+            </div>    
+            <div class="col-sm-4">
+              <input type="submit" class="btn btn-primary" value="Add" id="btn_Add" />
+            </div>
+        </div>
+        <div class="row">
+          <div class="mb-3 mt-3 text-primary" style="width: 100%;"><h4>Сонгогдсон төрөл болон асуултын тоо</h4></div>
+          <div style="width: 100%;">
+            <table class="table table-striped">
+              <thead>
+                <tr>
+                  <th>
+                    Сорилын төрөл
+                  </th>
+                  <th>
+                    Сорилын тоо
+                  </th>
+                  <th class="text-center">
+                    Хасах
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+              </tbody>
+
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-4">
+        <h3>Сурталчилгаа</h3>
+        <hr>
+        <img src="300x600.png">
+      </div>
+    </div>
+  </div>
+<script type="text/javascript" src="custom.js">
+</script>
+</body>
+</html>
